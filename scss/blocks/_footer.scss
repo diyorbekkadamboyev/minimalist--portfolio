@@ -1,0 +1,118 @@
+.footer {
+  &__container {
+    padding-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__top-heading {
+    max-width: 350px;
+    margin: 0;
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+  }
+
+  &__bottom {
+    background: #33323D;
+    padding: 24px 0;
+  }
+
+
+  &__bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 48px;
+    margin-right: -43px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 43px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__link:hover {
+    color: #5FB4A2;
+  }
+
+  &__conct-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: -16px;
+  }
+
+  &__conct-item {
+    margin-left: 16px;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .footer{
+    &__container {
+      flex-direction: column;
+      padding-bottom: 80px;
+    }
+
+    &__top-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    &__bottom  {
+      padding: 56px 0;
+    }
+    &__bottom-container  {
+      flex-direction: column;
+    }
+
+    &__nav {
+      flex-direction: column;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+      margin: 40px 0;
+    }
+
+    &__item {
+      margin-right: 0;
+    }
+
+    &__item+ &__item {
+      margin-top: 32px;
+    }
+  }
+}

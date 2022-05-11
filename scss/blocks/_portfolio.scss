@@ -1,0 +1,106 @@
+.portfolio {
+  padding-bottom: 150px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: -80px;
+  }
+
+  &__item {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  &__wrapper {
+    padding: 103px 0;
+    border-top: 1px solid  #dbdbe1;
+    border-bottom: 1px solid  #dbdbe1;
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    padding: 0;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-top: 28px;
+    margin-bottom: 24px;
+    max-width: 350px;
+    font-family: 'Public Sans';
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    opacity: 0.8;
+  }
+}
+
+.portfolio--wrapper-r{
+  margin-left: 125px;
+}
+
+.portfolio--wrapper-l{
+  margin-right: 125px;
+}
+
+@media only screen and (max-width: 900px){
+  .portfolio{
+    padding-bottom: 96px;
+    &__wrapper {
+      padding-top: 32px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .portfolio--wrapper-r{
+    margin-left: 69px;
+  }
+
+  .portfolio--wrapper-l{
+    margin-right: 69px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .portfolio {
+    padding-bottom: 80px;
+
+    &__list {
+      margin-top: -32px;
+    }
+
+    &__item {
+      flex-direction: column;
+      margin-top: 32px;
+    }
+
+    &__item:nth-child(even) {
+      flex-direction: column;
+    }
+
+    &__wrapper {
+      margin-top: 32px;
+    }
+  }
+
+  .portfolio--wrapper-r{
+    margin-left: 0;
+  }
+
+  .portfolio--wrapper-l{
+    margin-right: 0;
+  }
+}

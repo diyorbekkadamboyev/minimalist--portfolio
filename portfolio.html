@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Public+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Minimalist portfolio</title>
+</head>
+<body>
+  <!------------ --------------------- HEADER ----------------------------------->
+  <header class="header">
+    <div class="container header--container">
+      <a href="#" class="header__link">
+        <img class="header__logo-img" width="60" height="32" src="./images/logo-img.svg" srcset="./images/logo-img.svg 1x , ./images/logo-img@2x.svg 2x" alt="logo-img">
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="index.html">
+              HOME
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="portfolio.html">
+              PORTFOLIO
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#">
+              CONTACT ME
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__btn">
+        <!-- <img class="header__hamburger" width="24" height="13" src="./images/hamburger-menu.svg" srcset="./images/hamburger-menu.svg 1x , ./images/hamburger-menu@2x.svg 2x" alt="picture" > -->
+      </button>
+    </div>
+  </header>
+
+  <main class="portfolio">
+    <div class="container">
+      <ul class="portfolio__list">
+        <li class="portfolio__item">
+          <picture>
+            <source media="(max-width: 1084px)" srcset="./images/manage-tablet.jpg">
+            <img class="portfolio__img" src="./images/manage.jpg" alt="images" width="540" height="500">
+          </picture>
+          <div class="portfolio__wrapper portfolio--wrapper-r">
+            <h1 class="portfolio__heading">Manage</h1>
+            <p class="portfolio__desc">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+            <button class="button">VIEW PROJECT</button>
+          </div>
+        </li>
+
+        <li class="portfolio__item">
+          <picture>
+            <source media="(max-width: 1084px)" srcset="./images/bookmate-tablet.jpg">
+            <img class="portfolio__img" src="./images/bookmate.jpg" alt="images" width="540" height="500">
+          </picture>
+          <div class="portfolio__wrapper portfolio--wrapper-l">
+            <h1 class="portfolio__heading">Bookmark</h1>
+            <p class="portfolio__desc">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.</p>
+            <button class="button">VIEW PROJECT</button>
+          </div>
+        </li>
+
+        <li class="portfolio__item">
+          <picture>
+            <source media="(max-width: 1084px)" srcset="./images/issue-tablet.jpg">
+            <img class="portfolio__img" src="./images/insure.jpg" alt="images" width="540" height="500">
+          </picture>
+          <div class="portfolio__wrapper portfolio--wrapper-r">
+            <h1 class="portfolio__heading">Insure</h1>
+            <p class="portfolio__desc">This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+            <button class="button">VIEW PROJECT</button>
+          </div>
+        </li>
+
+        <li class="portfolio__item">
+          <picture>
+
+
+            <source media="(max-width: 1084px)" srcset="./images/fylo-tablet.jpg">
+
+            <img class="portfolio__img" src="./images/fylo.jpg" alt="images" width="540" height="500">
+          </picture>
+
+          <div class="portfolio__wrapper portfolio--wrapper-l">
+            <h1 class="portfolio__heading">Fylo</h1>
+            <p class="portfolio__desc">This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.</p>
+            <button class="button">VIEW PROJECT</button>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <section class="footer__top">
+      <div class="container footer__container">
+        <h2 class="footer__top-heading">Interested in doing a project together?</h2>
+        <button class="button">CONTACT ME</button>
+      </div>
+    </section>
+
+    <section class="footer__bottom">
+      <div class="container footer__bottom-container">
+
+        <nav class="footer__nav">
+          <a class="footer__logo-link" href="#">
+            <img class="footer__logo" src="./images/footer-logo.svg" alt="logo" width="61" height="32">
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">
+                HOME
+              </a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="portfolio.html">
+                PORTFOLIO
+              </a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                CONTACT ME
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="footer__conct-list">
+          <li class="footer__conct-item">
+            <a class="footer__conct-link" href="#">
+              <img class="footer__conct-img" src="./images/git.svg" alt="link-logo" width="24" height="24">
+            </a>
+          </li>
+
+          <li class="footer__conct-item">
+            <a class="footer__conct-link" href="#">
+              <img class="footer__conct-img" src="./images/twitter.svg" alt="link-logo" width="24" height="24">
+            </a>
+          </li>
+
+          <li class="footer__conct-item">
+            <a class="footer__conct-link" href="#">
+              <img class="footer__conct-img" src="./images/in.svg" alt="link-logo" width="24" height="24">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </footer>
+
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

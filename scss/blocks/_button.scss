@@ -1,0 +1,17 @@
+.button {
+  padding: 17px 34px;
+  color: #33323D;
+  font-family: 'Public Sans';
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #33323D;
+}
+
+.button:hover {
+  background: #5FB4A2;
+  border: 1px solid  #5FB4A2;
+  color: white;
+}
