@@ -509,4 +509,14 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+
+.hero--container {
+  background-image: url("../../images/hero-img.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  color: red;
+}
 /*# sourceMappingURL=main.css.map */

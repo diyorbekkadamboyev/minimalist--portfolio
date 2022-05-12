@@ -1,0 +1,13 @@
+.hero {
+
+    &--container {
+        background-image: url("../../images/hero-img.svg");
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+
+    &-text {
+        color: red;
+    }
+
+}
