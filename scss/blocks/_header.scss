@@ -1,0 +1,104 @@
+.header{
+    padding: 64px 0;
+
+    &__btn {
+        display: none;
+    }
+
+    &--container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__item + &__item {
+        margin-left: 42px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: 'Public Sans';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        transition: 0.3s;
+    }
+
+    &__link:hover {
+        color: #5FB4A2;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .header {
+        position: relative;
+        &__btn {
+            display: block;
+            border: none;
+            background-color: transparent;
+            background-image: url("../../images/hamburger-menu.svg");
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 13px;
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
+
+
+    .header--open .header__nav {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+
+    .header--open .header__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        background: #33323D;
+        width: 223px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .header--open .header__item {
+        margin-left: 0;
+        margin-bottom: 32px;
+        
+    }
+
+    .header--open .header__link {
+        color: #FFFFFF;
+    }
+
+    .header--open .header__btn {
+        background-image: url("../../images/hamburger-menuX.svg");
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 19px;
+    }
+
+}
+

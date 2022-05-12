@@ -388,9 +388,120 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1157px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  padding: 64px 0;
+}
+
+.header__btn {
+  display: none;
+}
+
+.header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__item + .header__item {
+  margin-left: 42px;
+}
+
+.header__link {
+  text-decoration: none;
+  font-family: 'Public Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  color: #5FB4A2;
+}
+
+@media only screen and (max-width: 440px) {
+  .header {
+    position: relative;
+  }
+  .header__btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../images/hamburger-menu.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 13px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header--open .header__nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+  .header--open .header__list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    background: #33323D;
+    width: 223px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    right: 0;
+    margin-right: 20px;
+  }
+  .header--open .header__item {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .header--open .header__link {
+    color: #FFFFFF;
+  }
+  .header--open .header__btn {
+    background-image: url("../../images/hamburger-menuX.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 19px;
+  }
 }
 
 .main {

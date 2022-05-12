@@ -4,10 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Public+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  <title>SCSS BEM STARTER</title>
+  <title>Minimalist portfolio</title>
 </head>
 <body>
+<!------------ --------------------- HEADER ----------------------------------->
+  <header class="header">
+    <div class="container header--container">
+      <a href="#" class="header__link">
+        <img class="header__logo-img" width="60" height="32" src="./images/logo-img.svg" srcset="./images/logo-img.svg 1x , ./images/logo-img@2x.svg 2x" alt="logo-img">
+      </a>
 
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="index.html">
+              HOME
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#">
+              PORTFOLIO
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#">
+              CONTACT ME
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__btn">
+        <!-- <img class="header__hamburger" width="24" height="13" src="./images/hamburger-menu.svg" srcset="./images/hamburger-menu.svg 1x , ./images/hamburger-menu@2x.svg 2x" alt="picture" > -->
+      </button>
+    </div>
+  </header>
+
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
