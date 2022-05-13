@@ -1,0 +1,70 @@
+.project {
+    margin-bottom: 150px;
+
+    &--container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        margin: 0;
+        font-family: 'Ibarra Real Nova';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+        max-width: 350px;
+        margin-right: 10px;
+    }
+
+    &__btn {
+        margin: 0;
+        padding: 17px 34px;
+        border: 1px solid #33323D;
+        cursor: pointer;
+        background: #F2F2F2;
+        font-family: 'Public Sans';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        transition: 0.3s;
+        display: block;
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+
+    &__btn:hover {
+        background: #33323D;
+        color: #F2F2F2;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .project {
+        &--container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__pic {
+            display: none;
+        }
+
+        &__heading {
+            margin-right: 0;
+            max-width: 400px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &__btn {
+            margin-left: 0;
+        }
+    }
+}

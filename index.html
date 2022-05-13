@@ -46,6 +46,7 @@
   </header>
   <!--------------------------------- MAIN ------------------------------------>
   <main class="main">
+    <!-- hero -->
     <section class="hero">
       <div class="container hero--container">
         <div class="hero__boxs">
@@ -61,8 +62,89 @@
         </div>
       </div>
     </section>
+    <!-- about -->
+    <section class="about">
+      <div class="container about--container">
+        <picture>
+          <source media="(max-width : 680px)"   srcset="./images/about-img-mobile.png">
+
+          <source media="(max-width : 945px)"   srcset="./images/about-tablet.png">
+
+          <img src="./images/about-img.png"  alt="picture-about" class="about__img">
+        </picture>
+
+        <div class="about__box">
+          <img class="about__line" src="./images/line.png" width="350" height="1"  alt="line-img">
+          <h3 class="about__heading">About Me</h3>
+          <p class="about__desc">
+            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+          <button class="about__btn">
+            GO TO PORTFOLIO
+          </button>
+          <img src="./images/line.png" width="350" height="1"  alt="line-img">
+        </div>
+      </div>
+    </section>
+    <!-- project -->
+    <section class="project">
+      <div class="container project--container">
+        <h3 class="project__heading">Interested in doing a project together?</h3>
+        <picture class="project__pic">
+          <source media="(max-width : 945px)" srcset="./images/project-line-tablet.png"  class="project__line">
+
+          <img src="./images/project-img.png"  alt="" class="project__img">
+        </picture>
+        <button class="project__btn">
+          GO TO PORTFOLIO
+        </button>
+      </div>
+    </section>
   </main>
 
+<footer class="footer">
+  <div class="container footer--container">
+    <div class="footer__left">
+      <img src="./images/footer-logo-img.png" width="61" height="32" alt="picture" class="footer__logo-img">
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="index.html" class="footer__link">
+              HOME
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a href="index.html" class="footer__link">
+              PORTFOLIO
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a href="index.html" class="footer__link">
+              CONTACT ME
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__right">
+      <a  href="#" class="footer__links">
+        <img src="./images/github.svg" width="25" height="24" alt="" class="github">
+      </a>
+
+      <a href="#" class="footer__links">
+        <img src="./images/twiter.svg" width="24" height="20" alt="picture" class="twiter">
+      </a>
+
+      <a href="#" class="footer__links">
+        <img src="./images/in.svg" width="24" height="24" alt="picture" class="in">
+      </a>
+    </div>
+  </div>
+</footer>
 
   <script src="./js/script.js"></script>
 </body>
